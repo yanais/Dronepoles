@@ -6,13 +6,18 @@ RGBLed led;
 
 void setup() 
 {
-	
+	Serial.begin(9600);
+Serial.println("start2");
+  
+  
 }
 
 void loop() 
 {	    
+    Serial.println("st2");
 	int sample;
 	sample = ultrasonic.read(); 
+        Serial.println(sample);
 	if(sample > 200)
 		led.setRGB(255,0,0);
 	else if(sample > 100)
@@ -20,7 +25,7 @@ void loop()
 	else
 		led.setRGB(0,0,255);
 		
-	delay(100);
+	delay(200);
 }
 
 

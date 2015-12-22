@@ -2,9 +2,9 @@
 #ifndef HCSR04_H
 #define HCSR04_H
 
-#include <Arduino.h>
+#include "Arduino.h"
 
-#include <avr/io.h>
+#include "avr/io.h"
 
 #define MAX_SENSOR_DISTANCE 500 // Maximum sensor distance can be as high as 500cm, no reason to wait for ping longer than sound takes to travel this distance and back.
 #define US_ROUNDTRIP_IN 146     // Microseconds (uS) it takes sound to travel round-trip 1 inch (2 inches total), uses integer to save compiled code space.

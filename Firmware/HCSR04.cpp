@@ -20,8 +20,9 @@ HCSR04::HCSR04(int max_cm_distance)
 
 unsigned int HCSR04::read() 
 {
-	if (!trigger()) 
-		return NO_ECHO;               
+	if (!trigger())   
+		return NO_ECHO; 
+
 	while (*_echoInput & _echoBit)
 	{
 		if (micros() > _max_time) 
@@ -45,7 +46,13 @@ unsigned int HCSR04::readCentimeter()
 
 boolean HCSR04::trigger() 
 {
-
+      Serial.println("pins:");
+      Serial.println(*_triggerOutput);
+      Serial.println(_triggerBit);
+      Serial.println(*_echoInput);
+      Serial.println(_echoBit);
+      
+      
 	*_triggerOutput &= ~_triggerBit; 
 	delayMicroseconds(4);            
 	*_triggerOutput |= _triggerBit;  
