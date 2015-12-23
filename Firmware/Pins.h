@@ -19,8 +19,8 @@ Peripherals:
 #define HCSR04_TRIGGER_PIN 	4
 
 /*RGB led Common anode*/
-#define RGBLED_RED_PIN 		9 
+#define RGBLED_RED_PIN 		5 
 #define RGBLED_GREEN_PIN	6
-#define RGBLED_BLUE_PIN		5
+#define RGBLED_BLUE_PIN		9
 
 #endif //__PINS_H

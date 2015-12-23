@@ -1,4 +1,3 @@
-
 #ifndef HCSR04_H
 #define HCSR04_H
 
@@ -22,20 +21,19 @@
 class HCSR04
 {
 	public:
-		HCSR04(int max_cm_distance = MAX_SENSOR_DISTANCE);
+		static HCSR04* getInstance();
 		unsigned int read();
 		unsigned int readInch();
 		unsigned int readCentimeter();
-
+	protected:
+		HCSR04(int max_cm_distance = MAX_SENSOR_DISTANCE);
 	private:
 		boolean trigger();
 		uint8_t _triggerBit;
 		uint8_t _echoBit;
-		volatile uint8_t *_triggerOutput;
-		volatile uint8_t *_triggerMode;
-		volatile uint8_t *_echoInput;
 		unsigned int _maxEchoTime;
 		unsigned long _max_time;
+		static HCSR04* instance;
 };
 
 

@@ -2,6 +2,15 @@
 #include "Pins.h"
 #include "arduino.h"
 
+RGBLed* RGBLed::instance = 0;
+
+RGBLed* RGBLed::getInstance()
+{
+	if(instance == 0)
+		instance = new RGBLed;
+	return instance;
+}
+
 RGBLed::RGBLed()
 {
     pinMode(RGBLED_RED_PIN, OUTPUT);
