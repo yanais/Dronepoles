@@ -1,0 +1,22 @@
+Circuito.io
+
+all right reserved
+...
+...
+...
+
+
+Peace Maker BOM:
+
+MicroController:
+	Arduino MEGA R3
+		-link: https://www.sparkfun.com/products/11061
+Components:
+    1.Servo
+        -link: https://www.sparkfun.com/products/10333
+    2.LDR - Mini Photocell
+        -link: https://www.sparkfun.com/products/9088
+        -additional:
+            -10K ohm resistor
+                -qty: 1
+                -link: https://www.sparkfun.com/products/8374
