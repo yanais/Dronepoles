@@ -6,20 +6,20 @@ all right reserved
 ...
 
 
-Peace Maker BOM:
+Drone poles BOM:
 
 Power source:
-    1.9V battery
+    1.9V battery:
         -link: https://www.sparkfun.com/products/10218
 MicroController:
-	1.Arduino pro micro 5v/16MHz 
-		-link: https://www.sparkfun.com/products/11061
+    1.Arduino pro micro 5v/16MHz: 
+        -link: https://www.sparkfun.com/products/11061
 Components:
-    1.HCSR04 ultrasonic sensor
+    1.HCSR04 ultrasonic sensor:
         -link: http://www.amazon.co.uk/HC-SR04-Arduino-Ultrasonic-Distance-Measuring/dp/B0089VA3AY
-    2.LED - RGB Clear Common Anode
+    2.LED - RGB Clear Common Anode:
         -link: https://www.sparkfun.com/products/10820
         -additional:
-            -330 ohm resistor
+            -330 ohm resistor:
                 -qty: 1
                 -link: https://www.sparkfun.com/products/8377
