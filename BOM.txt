@@ -1,9 +1,4 @@
-Circuito.io
-
-all right reserved
-...
-...
-...
+Circuito.io - all info regarding the use of this file can be found at https://github.com/MatanRobo/Dronepoles/blob/master/readme.md
 
 
 Drone poles BOM:
