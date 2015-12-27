@@ -1,15 +1,21 @@
 #include "RGBLed.h"
-#include "Pins.h"
-#include "arduino.h"
 
+/**************************************************************/
+/* Singelton section - promise just one instance of this class*/
+/**************************************************************/
 RGBLed* RGBLed::instance = 0;
-
 RGBLed* RGBLed::getInstance()
 {
 	if(instance == 0)
 		instance = new RGBLed;
 	return instance;
 }
+
+/*End singleton section*/
+
+/***********************/
+/*Class implemantation:*/
+/***********************/
 
 RGBLed::RGBLed()
 {

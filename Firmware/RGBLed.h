@@ -1,6 +1,9 @@
 #ifndef RGBLED_H
 #define RGBLED_H
 
+#include "Pins.h"
+#include "arduino.h"
+
 class RGBLed
 {
 	public:
